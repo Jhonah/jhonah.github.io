@@ -69,6 +69,10 @@ body {
   line-height: 48px;
 }
 
+.avatar {
+	border-radius: 50%;
+}
+
 .intro {
   margin: 0 0 120px;
 }

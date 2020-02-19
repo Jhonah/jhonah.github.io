@@ -14,7 +14,41 @@ body {
 .container {
   max-width: 928px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 26px;  
+  /*vertical-align: bottom;*/
+}
+
+.container p,
+.container h3 {
+  /*text-align: center;*/
+  text-indent: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.split {
+  float: left;
+  height: 375px;
+  width: 50%;
+  /*z-index: 1;*/
+  top: 0;
+  /*overflow-x: hidden;*/
+  padding-top: 25px;
+  padding-bottom: 20px;
+  /*border-radius: 15%;  */
+}
+
+.left {
+  left: 0;
+  background-color: #696970;
+  box-shadow: inset 40px 0px 40px 40px #f2f2f2;
+  color: white;
+}
+
+.right {
+  right: 0;
+  background-color: #ff9494;
+  box-shadow: inset -40px 0px 40px 40px #f2f2f2;
 }
 
 .page-header {
@@ -89,6 +123,11 @@ body {
 .user-image {
   margin: 0 0 32px;
   text-align: center;
+
+}
+
+.user-border {
+  border-radius: 35%;  
 }
 
 .intro h3,

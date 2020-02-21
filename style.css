@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #525d62;
-  background: #ffffff url("img/company-of-heroes-2.jpg") no-repeat 50% 0;
+  background: #ffffff url("img/company-of-heroes-2.jpg") no-repeat 50% 0;  
 }
 
 h1 {
@@ -21,8 +21,18 @@ h1 {
   padding: 5px 25px;
 }
 
+.without-indent {
+  text-indent: 0;
+}
+
 .features {
   /*margin-bottom: 30px;*/
+}
+
+.text-header {
+  font-size: 26px;
+  line-height: 135%;
+  color: #6095f5;
 }
 
 .image {
@@ -31,8 +41,16 @@ h1 {
 
 section {
   padding: 0 20px;
-  margin-bottom: 30px;
-  
+  margin-bottom: 30px;  
+}
+
+p {
+  text-indent: 15px;
+}
+
+.indent {
+  text-indent: 0;
+  padding: 0 15px;
 }
 
 .container {
@@ -40,7 +58,9 @@ section {
   background-color: #525d62;
   color: white;
   margin: 0 auto; /*не знаю что означает ноль, но auto это отступы слева и справа, чтобы в центре размещалось*/
-  
+  /*z-index: 1;*/
+  overflow-x: hidden;
+  border-radius: 0 0 0 5%;
 }
 
 .site-footer {

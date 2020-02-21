@@ -3,13 +3,13 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
+  color: #525d62;
   background: #ffffff url("img/company-of-heroes-2.jpg") no-repeat 50% 0;
 }
 
 h1 {
   background-color: #525d62;
-  width: 260px;
+  width: 50%;
   font-family: "Arial", sans-serif;
   font-size: 36px;
   line-height: 100%; /*высота меж строчного интервала*/
@@ -22,12 +22,30 @@ h1 {
 }
 
 .features {
+  /*margin-bottom: 30px;*/
+}
+
+.image {
+  width: 70%;
+}
+
+section {
+  padding: 0 20px;
+  margin-bottom: 30px;
   
 }
 
 .container {
-  width: 480px;
+  width: 960px;
   background-color: #525d62;
   color: white;
   margin: 0 auto; /*не знаю что означает ноль, но auto это отступы слева и справа, чтобы в центре размещалось*/
+  
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #999999;
 }

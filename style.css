@@ -3,14 +3,11 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  /*color: white;*/
-  background: #ffffff url("img/72GGZ4INAgM.jpg") repeat 37% 6%;  
+  background: #ffffff url("img/72GGZ4INAgM.jpg") repeat 37% 17%;
 }
 
-.site-header {
-  margin-bottom: 180px;
-  padding: 5px 25px;
-  margin-top: 20px;
+.site-header {  
+  margin: 40px 25px;
 }
 
 h1 {
@@ -21,26 +18,30 @@ h1 {
   margin-left: 15px;
 }
 
+.container {
+  width: 960px; /* Уменьшил ширину на 50px так как внутренний отступ по бокам равен 25px */
+  margin: 0 auto; /* Не знаю что означает ноль, но auto это отступы слева и справа, чтобы в центре размещалось */
+  background-color: rgba(255, 255, 255, 0.99);
+  border-top: 1px solid #333;
+  border-radius: 5px;
+}
+
 .block {
   width: 60%;
-  padding-left: 25px;
   text-align: justify;
 }
 
 section {
-  /*padding: 0 20px;*/
-  margin-bottom: 30px;
+  margin: 0 25px;
+  /*padding-left: 1px;*/
 }
 
-.image {
-  /*width: 960px;*/
-}
-
-.container {
-  width: 960px;
-  background-color: white;
-  margin: 0 auto; /*не знаю что означает ноль, но auto это отступы слева и справа, чтобы в центре размещалось*/
-  border-radius: 5px;
+.list {
+  width: 75%;
+  background-color: #aaa;
+  border: 3px dashed #333;
+  margin: 25px;
+  padding: 15px;
 }
 
 .indent {
@@ -48,15 +49,12 @@ section {
   text-align: justify;
 }
 
-.space {
-  /*width: 960px;*/
-  white-space: pre-wrap;
+.indent-bottom {
+  margin-bottom: 180px;
 }
 
-.gradient {
-  /*background: white;*/
-  padding: 10px;
-  border-top: 1px solid #333;
+.space {
+  white-space: pre-wrap;
 }
 
 .gradient-bottom {

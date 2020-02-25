@@ -21,13 +21,14 @@ h1 {
 .container {
   width: 960px; /* Уменьшил ширину на 50px так как внутренний отступ по бокам равен 25px */
   margin: 0 auto; /* Не знаю что означает ноль, но auto это отступы слева и справа, чтобы в центре размещалось */
-  background-color: rgba(253, 217, 181, 1);
+  background-color: rgba(245, 222, 179, 1);
   border-top: 1px solid #333;
   border-radius: 5px;
 }
 
 .block {
-  width: 60%;
+  float: left;
+  width: 50%;
   text-align: justify;
 }
 
@@ -37,7 +38,8 @@ section {
 }
 
 .list {
-  width: 75%;
+  float: left;
+  width: 40%;
   background-color: #aaa;
   border: 3px dashed #333;
   margin: 25px;

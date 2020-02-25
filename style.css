@@ -4,12 +4,13 @@ body {
   font-size: 14px;
   line-height: 20px;
   /*color: white;*/
-  background: #ffffff url("img/epidemia4-1024x538.jpg") repeat 50% 0;  
+  background: #ffffff url("img/72GGZ4INAgM.jpg") repeat 37% 6%;  
 }
 
 .site-header {
   margin-bottom: 180px;
-  padding: : 5px 25px;
+  padding: 5px 25px;
+  margin-top: 20px;
 }
 
 h1 {
@@ -20,20 +21,40 @@ h1 {
   margin-left: 15px;
 }
 
+.block {
+  width: 60%;
+  padding-left: 25px;
+  text-align: justify;
+}
+
 section {
-  padding: 0 20px;
+  /*padding: 0 20px;*/
   margin-bottom: 30px;
+}
+
+.image {
+  /*width: 960px;*/
 }
 
 .container {
   width: 960px;
-  /*color: white;*/
+  background-color: white;
   margin: 0 auto; /*не знаю что означает ноль, но auto это отступы слева и справа, чтобы в центре размещалось*/
- 
+  border-radius: 5px;
+}
+
+.indent {
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.space {
+  /*width: 960px;*/
+  white-space: pre-wrap;
 }
 
 .gradient {
-  background: white;
+  /*background: white;*/
   padding: 10px;
   border-top: 1px solid #333;
 }

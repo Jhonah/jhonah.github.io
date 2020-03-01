@@ -1,122 +1,108 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
-* { 
-  padding: 0; 
-  margin: 0; 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
   font-size: 14px;
-  line-height: 20px;
-  background: #ffffff url("img/image.jpg") repeat 37% 17%;
-  letter-spacing: 1px;
 }
 
-.site-header {
-    text-align: justify;
-    height: 8em;
-    padding: 2em 5%;
-    background: #2c3e50;
-    color: #fff;
-	display: flex;
-	justify-content: space-between;
-	line-height: 100%; /*высота меж строчного интервала*/
+.layout-positioner {
+    width: 960px;
+    margin: 0 auto;
+    box-shadow: 0 0 2px #cccccc;
 }
 
-.site-header h1 {
-    font-size: 3em;
-    font-style: italic;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
- /*
-header nav a {
-    padding: 0 0.6em;
-    white-space: nowrap;
-}*/
- /*
-header nav a:last-child {
-    padding-right: 0;
+
+.header {
+    margin-bottom: 10px;
+    padding-top: 30px;
+    color: white;
+    background-color: #34495e;    
 }
- 
-@media screen and (max-width: 720px){
-     
-    header {
-        height: auto;
+
+    .header .layout-positioner {
+        border-bottom: 2px dashed #95a5a6;
     }
-     
-    header > div,
-    header > div h1,
-    header nav {
-        height: auto;
-        width: auto;
-        display: block;
-        text-align: center;
+
+    .header .layout-column {
+        min-height: 50px;
+        /*background-color: rgba(192, 57, 43, 0.9);*/
+        
     }
-     
-}
-*/
-h1 {
-  /*width: 50%;
-  font-family: "Arial", sans-serif;
-  font-size: 36px;
-  
-  margin-left: 15px;*/
+
+    .header .layout-column-1 {
+        float: left;
+        width: 70%;
+    }
+
+    .header .layout-column-2 {
+        float: right;
+        width: 20%;
+        /*margin-left: 20px;*/
+    }
+
+.logo {
+  padding: 10px;
 }
 
-.container {
-  width: 960px; /* Уменьшил ширину на 50px так как внутренний отступ по бокам равен 25px */
-  margin: 0 auto; /* Не знаю что означает ноль, но auto это отступы слева и справа, чтобы в центре размещалось */
-  background-color: #D4D0C4 /*rgba(245, 222, 179, 1)*/;
-  border-top: 1px solid #333;
-  margin-top: 60px;
-  border-radius: 5px;
+.logo p {
+  margin: 0;
 }
 
-.block {
-  float: left;
-  width: 50%;
-  text-align: justify;
+.menu {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
 }
 
-section {
-  margin: 0 25px;
-  /*padding-left: 1px;*/
+    .menu li {
+      margin-bottom: 5px;
+      padding: 5px;
+      text-align: center;
+      background-color: #2c3e50;
+      border-radius: 5px;
+    }
+
+.features {
+  margin-bottom: 10px;
 }
 
-.list {
-  float: left;
-  width: 40%;
-  background-color: #aaa;
-  border: 3px dashed #333;
-  margin: 25px;
-  padding: 15px;
+    .features .layout-column {
+        float: left;
+        font-size: 1.5em;
+        width: 300px;
+        min-height: 100px;
+        margin-right: 30px;
+        background-color: rgba(236, 240, 241, 0.9);
+        /*border-bottom: 2px dashed #95a5a6;*/
+    }
+
+.features .layout-column:last-child {
+  margin-right: 0;
 }
 
-.indent {
-  text-indent: 2em;
-  text-align: justify;
+.feature {
+    padding: 10px;
+    text-align: center;
 }
 
-.indent-bottom {
-  margin-bottom: 180px;
+.content {
+    min-height: 100px;
+    padding: 10px;
+    color: white;
+    background-color: #3498db;
+    margin-left: 170px;
 }
 
-.space {
-  white-space: pre-wrap;
+.footer-logo {
+  padding: 10px;
 }
 
-.gradient-bottom {
-  background: rgba(13, 12, 11, 1);
-}
-
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  color: #999999;
-  
-  border-top: 1px solid #aaaaaa;
+.footer {
+  min-height: 50px;
+  color: white;
+  background-color: #34495e;
 }

@@ -1,16 +1,48 @@
 h1 {
   margin: 0;
   margin-bottom: 2em;
-  font-size: 18px;
+  /*font-size: 18px;*/
 }
 
 .container {
-  width: 400px;
+  width: 960px;
   margin: 20px auto;
-  
+  /*display: table;*/
 }
 
-.catalog {
+.header {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: lightgreen;
+}
+
+.site-content {
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.content-area {
+  float: left;
+  /*display: inline-block;*/
+  width: 540px;
+  height: 400px;
+  background-color: lightgray;
+}
+
+.content-area  p {
+  text-indent: 1.5em;
+  text-align: justify;
+  padding: 10px;
+}
+
+.widget-area {
+  float: right;
+}
+
+.catalog {  
+  /*display: inline-block;*/
   width: 400px;
   background-color: #ecf0f1;
   box-shadow: 0 0 3px #999;
@@ -19,6 +51,10 @@ h1 {
 .catalog::after {
   content: "";
   display: table;
+  clear: both;
+}
+
+.clearfix {
   clear: both;
 }
 
@@ -38,4 +74,11 @@ h1 {
 
 .item:nth-child(3n) {
   margin-right: 0;
+}
+
+.footer {
+  width: 100%;
+  padding: 10px;
+  
+  background-color: lightblue;
 }

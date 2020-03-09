@@ -1,3 +1,8 @@
+:root {
+    --content-color: #CFCAAE;
+    --contentinside-color: rgba(0, 169, 69, 0.6) /*#009955*/;
+}
+
 h1 {
   margin: 0;
   margin-bottom: 2em;
@@ -25,24 +30,28 @@ body {
   margin-bottom: 30px;
 }
 
-.content-area {  
-  font-family: Optima, serif;
-  float: left;
-  width: 540px;
-  height: 400px;
-  background-color: #CFCAAE;
-  margin-bottom: 20px;  
+.content-area {
+    font-family: Optima, serif;
+    float: left;
+    width: 540px;
+    height: 400px;
+    padding-bottom: 10px;
+    /*margin-bottom: 20px;*/
+    background-color: var(--content-color, orange);
 }
 
-.content-area  p {
-  text-indent: 2.5em;
-  text-align: justify;
-  padding: 15px;
-}
+    .content-area p {
+        text-indent: 2.5em;
+        text-align: justify;
+        padding: 0 15px;
+        margin-bottom: 15px;
+        background-color: var(--contentinside-color, green);
+    }
 
 .widget-area {
-  float: right;
-  display: table;
+    float: right;
+    display: table;
+    background-color: var(--content-color, orange);
 }
 
 .site-header ,
@@ -95,6 +104,7 @@ body {
 
 .site-header,
 .content-area,
+.widget-area,
 .footer {
   border-radius: 10px;
 }

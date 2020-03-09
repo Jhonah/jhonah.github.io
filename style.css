@@ -152,6 +152,7 @@ body {
     background: var(--content-color, orange);
 }
 
+/*добавил блок рекламы*/
     .advetising-top h2 {
         display: inline-block;
         vertical-align: top;

@@ -103,36 +103,6 @@ body {
     background-color: lightblue;
 }
 
-/*
-    .menu li {
-      margin-bottom: 5px;
-      padding: 5px;
-      text-align: center;
-      background-color: #2c3e50;
-      border-radius: 5px;
-    }
-
-.features {
-    margin-bottom: 30px;
-    border-bottom: 2px dashed #95a5a6;
-}
-
-    .features .layout-column {
-        
-        display: inline-block;
-        vertical-align: bottom;
-        font-size: 1.3em;
-        width: 300px;
-        min-height: 150px;
-        margin-right: 25px;
-        background-color: rgba(236, 240, 241, 0.9);        
-    }
-
-    .features .layout-column:last-child {
-      margin-right: 0;
-    }
-*/
-
 .site-header,
 .content-area,
 .widget-area,
@@ -156,5 +126,5 @@ body {
     .advetising-top h2 {
         display: inline-block;
         vertical-align: top;
-        background: var(--contentinside-color, green);
+        /*background: var(--contentinside-color, green);*/
     }

@@ -1,12 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="../index.html">
     <Files>
-      <File FileName="../style.css" Line="1" Column="1" />
-      <File FileName="../index.html" Line="1" Column="1" />
+      <File FileName="../index.html" Line="58" Column="1" />
+      <File FileName="../style.css" Line="108" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.web-develop FirstBuild="True" />
+  <DisabledProjects>
+    <String>web-develop/web-develop.shproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

@@ -136,6 +136,24 @@ body {
 .site-header,
 .content-area,
 .widget-area,
-.footer {
-  border-radius: 10px;
+.footer,
+.advetising-top {
+    border-radius: 10px;
 }
+
+.advetising-top {
+    display: table;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    
+    font-size: 36px;
+    margin-bottom: 20px;
+    background: var(--content-color, orange);
+}
+
+    .advetising-top h2 {
+        display: inline-block;
+        vertical-align: top;
+        background: var(--contentinside-color, green);
+    }

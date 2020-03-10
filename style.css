@@ -6,10 +6,10 @@
 }
 
 body {
+  font-size: 22px;
   width: 960px;
   margin: 0 auto;
   padding-top: 50px;
-  font-size: 18px;
 }
 
 .site-header  img{
@@ -40,10 +40,10 @@ body {
 .item {
   display: inline-block;
   vertical-align: top;
-  text-align: center;
-  width: 420px;
+  /*text-align: center;*/
+  width: 48%;
   padding-bottom: 20px;
-  margin-right: 35px;
+  margin-right: 3%;
   background: var(--content-inside-color, gray);
 }
 
@@ -60,11 +60,29 @@ body {
 	  margin: 0 auto;
 	}
 
+    .item {
+        text-indent: 0;
+    }
+
+.rows-3 .item {
+    width: 32%;
+    margin-right: 12px;
+}
+
+    .rows-3 .item:nth-child(3n) {
+        margin-right: 0;
+    }
+
 input[type=submit] {
-  padding: 5px 15px;
-  background: #ccc;
-  border: 0 none;
-  cursor: pointer;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+    width: 100%;
+    min-height: 45px;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: white;
+    background: #b21f66;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }

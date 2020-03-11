@@ -82,7 +82,7 @@ body {
 }
 
 input[type=submit] {
-	float: left;
+	/*float: left;*/
     width: 100%;
     min-height: 45px;
     font-size: large;

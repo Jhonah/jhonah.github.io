@@ -1,98 +1,69 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Serif);
-:root {
-    --content-color: #CFCAAE;
-    --content-inside-color: rgba(0, 169, 69, 0.6) /*#009955*/;
-    --image-yellow: #C3B091;
-    --image-inside-yellow: #FADA5E;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+	
 }
 
 body {
-  font-size: 22px;
-  font-family: 'PT Serif', serif;
-  width: 960px;
-  margin: 0 auto;
-  padding-top: 50px;  
-}
-
-.site-header  img{
-  width: 100%;
+    background-color: #02a8a8;
 }
 
 .container {
-  margin: 40px;
-  /*background: var(--content-color);*/
-  /*background-color: #05ff50;*/
+    width: 960px;	
+	padding-bottom: 30px;
+    margin: 0 auto;
+	background: white;
+	/*border: 3px solid black;
+    border-radius: 4px;*/    
 }
 
-.first-p {
+.header {
+  margin-top: 50px;
+}
+
+.header img,
+.footer {
+  width: 900px;
+  margin: 0 30px;
+}
+
+.main {
+  padding: 20px 120px;
+}
+
+.main h3,
+.footer {
   text-align: center;
 }
 
-.rows-2 {  
-  padding-bottom: 5px;
-  margin-bottom: 35px;
-  /*background: var(--content-color, black);*/
+.footer {
+  background-color: #02a8a8;
+  /*margin-bottom: 30px;*/
 }
 
-.row-2::after {
-  content: "";
-  display: table;
-  clear: both;
+.footer img {
+  width: 30px;
+  height: 30px;
 }
 
-.item {
-  display: inline-block;
-  vertical-align: top;
-  /*text-align: center;*/
-  width: 48%;
-  padding-bottom: 20px;
-  margin-right: 3%;
-  /*background: var(--content-inside-color, gray);*/
-}
-
-	.item img {
-		width: 100%;
-	/*height: 150px;*/
-	}
-
-	.item:nth-child(2n) {
-		margin-right: 0;
-	}
-
-	/*.item input {
-	  margin: 0 auto;
-	}*/
-
-    .item p{
-        height: 90px;
-		/*background: var(--content-inside-color, gray);*/
-    }	
-
-.rows-3 .item {
-    width: 32%;
-    margin-right: 12px;
-}
-
-    .rows-3 .item:nth-child(3n) {
-        margin-right: 0;
-    }
-
-.rows-4 {
-  padding-bottom: 40px;
-}
-
-input[type=submit] {
-	/*float: left;*/
-    width: 100%;
-    min-height: 45px;
-    font-size: large;
-    font-weight: bold;
-    padding: 5px 15px;
-	/*margin-top: 50px;*/
-    color: white;
-    background: #b21f66;
-    border: 0 none;
-    cursor: pointer;
-    -webkit-border-radius: 5px;
+/*.lemon {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    background: url(img/header.png);
+    background-size: contain;
+    background-position: 50%;
     border-radius: 5px;
+    float: left;
 }
+
+.about-lemon h3 {
+    text-align: center;
+    padding: 10px 0;
+}
+.about-lemon p {
+    font-size: 12px;
+    line-height: 150%;
+    margin: 20px 0;
+}*/

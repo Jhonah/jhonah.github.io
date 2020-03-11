@@ -1,12 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-	
+    font-family: Arial, sans-serif;	
+}
+
+:root {
+    --back-color: #02a8a8;
+    --back-inside-color: #f2a8a8;
 }
 
 body {
-    background-color: #02a8a8;
+    background-color: var(--back-color);
 }
 
 .container {
@@ -30,6 +34,7 @@ body {
 
 .main {
   padding: 20px 120px;
+  background: var(--back-inside-color);
 }
 
 .main h3,
@@ -37,8 +42,66 @@ body {
   text-align: center;
 }
 
+    .main p {
+      line-height: 1.5em;
+    }
+
+    .main li {
+      padding-bottom: 5px;
+    }
+
+.rows {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.rows::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.item {
+  display: inline-block;
+  width: 340px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+    .item p {
+      font-size: 18px;
+      font-weight: bolder;
+      margin: 30px;
+    }
+
+    .item input {
+      margin-bottom: 40px;
+    }
+
+    .item img {
+      width: 100%;
+    }
+
+    .item:nth-child(2n) {
+      margin-right: 0;
+    }
+
+input[type=submit] {
+  width: 100%;
+  min-height: 45px;
+  font-size: x-large;
+  font-weight: 800;
+  padding: 5px 15px;
+  color: white;
+  background: #b21f66;
+  border: 0 none; /*Убирает рамки кнопки*/
+  cursor: pointer; /*появляется курсор в виде перчатки*/
+  --webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
 .footer {
-  background-color: #02a8a8;
+  background-color: var(--back-color);
   /*margin-bottom: 30px;*/
 }
 

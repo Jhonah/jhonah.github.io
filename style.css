@@ -1,3 +1,4 @@
+@import url (https://fonts.googleapis.com/css?family=PT+Serif);
 * {
     margin: 0;
     padding: 0;
@@ -34,13 +35,18 @@ body {
 
 .main {
   padding: 20px 120px;
-  background: var(--back-inside-color);
+  /*background: var(--back-inside-color);*/
 }
 
 .main h3,
 .footer {
   text-align: center;
 }
+
+    .main a {
+	  color: blue;
+	  font-weight: bold;
+	}
 
     .main p {
       line-height: 1.5em;
@@ -60,6 +66,14 @@ body {
   display: table;
   clear: both;
 }
+
+.rows-2 {
+  margin-bottom: 20px;
+}
+
+	.rows-2 p {
+	  padding-top: 10px;
+	}
 
 .item {
   display: inline-block;
@@ -89,6 +103,7 @@ body {
 input[type=submit] {
   width: 100%;
   min-height: 45px;
+  font-family: "PT Serif", serif;
   font-size: x-large;
   font-weight: 800;
   padding: 5px 15px;
@@ -101,32 +116,23 @@ input[type=submit] {
 }
 
 .footer {
+  padding: 20px 0;
+  color: white;
   background-color: var(--back-color);
   /*margin-bottom: 30px;*/
 }
 
-.footer img {
-  width: 30px;
-  height: 30px;
-}
+	.footer img {
+	  width: 30px;
+	  height: 30px;
+	  padding: 10px 0;
+	}
 
-/*.lemon {
-    width: 180px;
-    height: 180px;
-    margin: 10px;
-    background: url(img/header.png);
-    background-size: contain;
-    background-position: 50%;
-    border-radius: 5px;
-    float: left;
-}
-
-.about-lemon h3 {
-    text-align: center;
-    padding: 10px 0;
-}
-.about-lemon p {
-    font-size: 12px;
-    line-height: 150%;
-    margin: 20px 0;
-}*/
+	.footer p {
+	  padding: 10px 0;
+	}
+	
+	.footer a {
+	  color: blue;
+	  margin-bottom: 30px;
+	}

@@ -2,68 +2,44 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-	
+	--back-color: #7fcdc6;
 }
 
-body {
-    background-color: #02a8a8;
+.result img{
+  background-image: url(files/result.png);
+  width: 250px;
 }
 
 .container {
-    width: 960px;	
-	padding-bottom: 30px;
-    margin: 0 auto;
-	background: white;
-	/*border: 3px solid black;
-    border-radius: 4px;*/    
+  background: var(--back-color);
+  width: 700px;
+  height: 550px;
+  margin: 0 auto;
+  border: 1px dashed lightgreen;
 }
 
-.header {
-  margin-top: 50px;
+.clouds {
+  position: relative;
+  width: 350px;
+  top: 25px;
+  left: 280px;
 }
 
-.header img,
-.footer {
-  width: 900px;
-  margin: 0 30px;
+.world {
+  top: 15px;
+  position: relative;
 }
 
-.main {
-  padding: 20px 120px;
+.water {
+  position: relative;
+  bottom: 35px;
+  z-index: 2;
 }
 
-.main h3,
-.footer {
-  text-align: center;
+.wooden-ship {
+  position: absolute;
+  width: 150px;  
+  top: 575px;
+  left: 315px;
+  z-index: 1;
 }
-
-.footer {
-  background-color: #02a8a8;
-  /*margin-bottom: 30px;*/
-}
-
-.footer img {
-  width: 30px;
-  height: 30px;
-}
-
-/*.lemon {
-    width: 180px;
-    height: 180px;
-    margin: 10px;
-    background: url(img/header.png);
-    background-size: contain;
-    background-position: 50%;
-    border-radius: 5px;
-    float: left;
-}
-
-.about-lemon h3 {
-    text-align: center;
-    padding: 10px 0;
-}
-.about-lemon p {
-    font-size: 12px;
-    line-height: 150%;
-    margin: 20px 0;
-}*/

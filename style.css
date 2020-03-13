@@ -1,34 +1,40 @@
 * {
 	margin: 0;
 }
-body {
-	font-family: Verdana, Tahoma, sans-serif;
+.moon {
+	width: 600px;
+	height: 300px;
+	border: 10px solid #fff;
+	box-shadow: 0 0 10px #000;
+	margin: 50px;
 }
 
-.main {
-	width: 500px;
-	margin: 150px;
-	border: 1px solid #666;
-	padding-bottom: 50px;
+.left {
+	width: 280px ;
+	float: left;
+	height: 280px;
+	padding: 10px;
 }
+.right {
+	width: 300px;
+	float: right;
+	overflow: hidden;
+	height: 300px;
+}
+.moon-img {
 
-	.main-img {
-		width: 100%;
-	}
-
-h2 {
-	text-align: center;
-	margin: 20px;
 }
 
 p {
-	font-size: 14px;
-	line-height: 17px;
-	margin: 10px;
-	text-indent: 15px;
+	font-size: 13px;
+	margin: 20px 0;
+	line-height: 150%;
+	text-indent: 20px;
 }
 
-.it {
-	font-style: italic;
-	color: brown;
+h3 {
+	text-align: right;
+	background: #c0c0c0;
+	padding: 10px;
+	margin-top: 0;
 }

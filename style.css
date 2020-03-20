@@ -1,19 +1,74 @@
 * {
 	margin: 0;
 }
+:root {
+  --tableback-green: rgb(93,159,114);
+  --border-green: rgb(83,143,102);
+  
+  --tableback-orange: orange;
+  --border-orange: rgb(229,148,0);
+  
+  --tableback-red: rgb(204,0,0);
+  --border-red: rgb(183,0,0);
+}
 body {
     font-size: 14px;
 	font-family: Verdana, Tahoma, sans-serif;
 	background-color: #7AD2FF;
 }
-table {
-	width: 370px;
-	margin: 150px auto;
-	border-collapse: collapse;	
-	border-left: 3px solid lightgray;
-	border-right: 3px solid lightgray;
-	background-color: white;
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
+
+table {
+    float: left;
+	margin-right: 30px;
+	width: 300px;	
+	border-collapse: collapse;	
+	padding: 0 3px; 
+	background-color: white;	
+}
+
+table:nth-child(3n) {
+  margin-right: 0;
+}
+
+.table-1 {
+  	border-left: 3px solid var(--tableback-green);
+	border-right: 3px solid var(--tableback-green);
+	border-top: 3px solid var(--tableback-green);
+	border-bottom: 3px solid var(--tableback-green);
+}
+
+.table-2 {
+  	border-left: 3px solid var(--tableback-orange);
+	border-right: 3px solid var(--tableback-orange);
+	border-top: 3px solid var(--tableback-orange);
+	border-bottom: 3px solid var(--tableback-orange);
+}
+
+.table-3 {
+  	border-left: 3px solid var(--tableback-red);
+	border-right: 3px solid var(--tableback-red);
+	border-top: 3px solid var(--tableback-red);
+	border-bottom: 3px solid var(--tableback-red);
+}
+
+.table-1 .borders {
+  border-bottom: 10px solid var(--border-green);
+}
+
+.table-2 .borders {
+  border-bottom: 10px solid var(--border-orange);
+}
+
+.table-3 .borders {
+  border-bottom: 10px solid var(--border-red);
+}
+
 .col-1{
   padding: 10px 0;
   color: gray;
@@ -21,30 +76,61 @@ table {
   text-transform: capitalize;
 }
 
-#money-color {  	
-  background-color: #7BEB3D	
+#text-case {
+  text-transform: lowercase;
 }
 
-.row-1 {
-  padding: 25px 0;
-  font-size: 25px;
-  color: green; 
-  font-weight: 900;  
-  border-top: 3px solid green;
+.row-1 {  
+  font-size: 35px; 
+  font-weight: bold;    
 }
 
 .row-2 {
-  padding: 15px 0;
-  font-size: 35px;
-  color: white;  
-  font-weight: 900;  
+  font-size: 25px;
+  font-weight: 400; 
+  padding-bottom: 25px;
 }
 
-.footer {
-  padding: 5px 0;
-  margin: 25px 0;
-  color: lightgreen;
-  border: 2px solid lightgreen;
-  border-radius: 5px;
-  border-bottom: 3px solid green;
+.rows {
+  /*padding: 10px 0;*/
+  line-height: 0.9em;
+  padding-top: 25px;  
+  color: white;  
+}
+
+.table-1 .rows {
+  background-color: var(--tableback-green);
+}
+
+.table-2 .rows {
+  background-color: var(--tableback-orange);
+}
+
+.table-3 .rows {
+  background-color: var(--tableback-red);
+}
+
+.border-dashed {
+  margin: 0 15px;
+  border-top: 2px dashed lightgray;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  border-style: none;
+  padding: 15px 30px;
+  margin: 25px 0 10px 0;
+  color: white;
+}
+
+.table-1 input[type=submit] {
+  background-color: var(--tableback-green);
+}
+
+.table-2 input[type=submit] {
+  background-color: var(--tableback-orange);
+}
+
+.table-3 input[type=submit] {
+  background-color: var(--tableback-red);
 }

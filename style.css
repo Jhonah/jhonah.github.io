@@ -1,74 +1,150 @@
-* {
-	margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "utf-8";
+body  {
+	background-size: 100% 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 150%;
+	font-weight: normal;
+	font-variant: normal;
+	background-attachment: fixed;
+	background-color: #FFF;
+	background-image: url(images/strip.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-align: left;
+	
 }
-html {
-    font-family: Tahoma, sans-serif;
-    font-size: 100%;
-  
+.lgp #wrapper { 
+	width: 960px;  
+	background-image:url(images/header-bg.png);
+	background-repeat:repeat-x;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 0 10px;
+	background-color: #FFFFFF;
+	margin: 25px auto; 
+	border: 1px solid #000000;
+	text-align: left; 
+} 
+.lgp #header { 
+	height:120px;
+	float:left;
+	width:100%;
+	margin-bottom:40px;
+	
+} 
+.lgp #header h1 {
+	margin: 0; 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100px;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+	
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: Georgia, serif;
+#sidebar1 a {
+color:#000;
 }
-.wrap {
-    min-width: 1200px;
-    width: 80%;
-    margin: 0 auto;
-    /*background: pink;*/
-    padding: 0 10px 50px 10px;
+#sidebar1 a:hover {
+text-decoration:underline;
+font-size:14px;
 }
-#logo {
-    display: block;
-	margin: 10px auto;
+.lgp #sidebar1 {
+	float: left; 
+	width: 200px; 
+	padding: 15px 10px 15px 20px;
+}
+.lgp #sidebar1 ul  {
+	margin: 0px;
+	padding-left: 20px;
+	line-height: 150%;
+}
+.lgp #sidebar1 ul  li {
+margin:10px 0;
+}
+.lgp #sidebar1 ul  li a {
+	color:#000;
+	font-size:13px;
+	text-decoration:none;
+}
+.lgp #sidebar1 ul  li a:hover {
+	color:#000;
+	/* font-size:14px; */
+	text-decoration:underline;
+}
+.lgp #mainContent { 
+	width:680px;
+	padding: 0 20px; 
+	float:right;
+} 
+.lgp #footer { 
+	padding: 0 10px 0 20px; 
+	background:#DDDDDD; 
+	
+	height:90px;
+} 
+.lgp #footer p {
+	margin: 0; 
+	padding: 10px 0; 
+}
+.lgp #footer a {
+color:black;
+text-decoration:none;
+}
+.lgp #footer a :hover {
+color:black;
+text-decoration:underline;
+}
+
+.fltrt { 
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.lgp #wrapper #header img {
+	margin: 10px;
+}
+.logo {
+	margin: 10px;
+	float: left;
+	height: 100px;
 	width: 300px;
 }
-
-.header {
-    overflow: hidden;
-}
-#site-title {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.nav {
-  height: 40px;
-  width: 100%;
-  background-color: blue;
-}
-.nav ul li {
-  display: inline-block;
-  color: #fff;
-  height: 40px;
-  width: 20%;
-  text-align: center;
-  line-height: 40px;
-}
-.main h1, .main h2, .main h3 {
-  margin: 30px 0;
-}
-.simple {
+.contacts {
+  width: 400px;
+  height: 100px;
+  margin: 10px;
   float: right;
-  margin: 0 0 30px 30px;
+  line-height: 21px;
+  font-size: 14px;
 }
-p {
-  font-size: 1.1rem;
-  line-height: 160%;
-  text-indent: 30px;
-  margin: 20px 0;
+.logo {
+width:300px;
+height:100px;
+padding:10px;
+float:left;
 }
-.wall {
-  width: 40%;
-  margin: 0 4%;
+h1 {
+	line-height:150%;
 }
-
-.wall4 {
-  width: 20%;
-  margin: 0 2%;
+.bordered {
+	margin:15px;
+	border-radius:10px;
+	border:5px solid #00698c;
 }
-.footer {
-  min-height: 200px;
-  width: 100%;
-  background: blue;
-  margin-top: 50px;
+.clearfix {
+	width:500px;
+	height:2px;
+	float:none;
 }

@@ -2,30 +2,50 @@
     padding: 0;
     margin: 0;
 }
+html{
+  font-size: 20px;
+}
 body {
     width: 960px;
     margin: 0 auto;
     margin-top: 50px;
+	background-color: #7dbbb9;
 }
-.main {
+.container {
     display: flex;
+	flex-direction: row-reverse;
 }
 .box {
-    /*display: inline-block;*/
-    padding: 50px 0;
+    padding: 35px 0;
     width: 25%;
     text-align: center;
     line-height: 50px;
     border: 1px solid lightgray;
 }
+    #sale {
+	  order: -2;
+	}
     .box h2 {
-        color: lightgray;
-        /*line-height: 200%;*/
-        text-transform: uppercase;
+	  font-size: 1em;
+	  padding-bottom: 25px;		
+      color: #e5e5e5;
+      text-transform: uppercase;
     }
     .box img {
+	  background-position: left, right;
+	  padding-top: 25px;
+	  border-top: 1px solid #e5e5e5;
     }
+	.box p {
+	  text-transform: uppercase;
+	}
+	.box a {
+	  color: #3A93DD;
+	  text-decoration: none;
+	}
 input[type=submit]{
-    padding: 5px;
-    background-color: orange;
+    padding: 10px 25px;
+	cursor: pointer;
+	border-style: none;
+    background-color: #FFFD66;
 }

@@ -11,40 +11,101 @@ body {
     margin-top: 50px;
 	background-color: #7dbbb9;
 }
+.header {
+    /*margin-bottom: 10px;*/
+}
+.header h1 {
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.flex .position {
+    width: 24%;
+    margin-right: 1%;
+    display: flex;
+    justify-content: flex-end;
+}
+.flex .sticker {
+    position: relative;
+    top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*position: relative;
+    vertical-align: middle;
+    top: -3.4em;*/
+    font-size: 10px;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #81B622;
+    border-radius: 50%;
+    text-transform: uppercase;
+}
+.flex .hit {
+    background-color: #0486D0;
+}
 .container {
     display: flex;
-	flex-direction: row-reverse;
+    justify-content: space-between;
+	/*flex-direction: row-reverse;*/
+}
+.container span {
+
 }
 .box {
     padding: 35px 0;
     width: 25%;
     text-align: center;
-    line-height: 50px;
-    border: 1px solid lightgray;
+    line-height: 40px;
+    border: 1px solid #e3e3e3;
 }
-    #sale {
-	  order: -2;
-	}
-    .box h2 {
-	  font-size: 1em;
-	  padding-bottom: 25px;		
-      color: #e5e5e5;
-      text-transform: uppercase;
-    }
-    .box img {
-	  background-position: left, right;
-	  padding-top: 25px;
-	  border-top: 1px solid #e5e5e5;
-    }
-	.box p {
-	  text-transform: uppercase;
-	}
-	.box a {
-	  color: #3A93DD;
-	  text-decoration: none;
-	}
+#sale:before {    
+    position: relative;
+    top: -3.4em;
+}
+#sale {
+    order: -2;
+}
+.box h2 {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #e3e3e3;
+    text-transform: uppercase;
+    /*background-color: blue;*/
+}
+.box img {
+    padding-top: 25px;
+    border-top: 1px solid #e3e3e3;
+    /*background-position: left, right;*/
+    /*background-color: blue;*/
+}
+.box p {
+	text-transform: uppercase;
+}
+.box a {
+    color: #3A93DD;
+    text-decoration: none;
+    /*background-color: blue;*/
+}
+.box .strike {
+    /*display: inline-block;*/
+    text-decoration: line-through;
+    /*color: #e5e5e5;*/
+    padding: 0 8px;
+    font-size: 0.65rem;
+    font-weight: 300;
+}
+.box .cost {
+    height: 55px;
+    /*background-color: blue;*/
+}
 input[type=submit]{
-    padding: 10px 25px;
+    width: 70%;
+    padding: 10px 0;
+    font-size: 0.7rem;
+    font-weight: 500;
 	cursor: pointer;
 	border-style: none;
     background-color: #FFFD66;

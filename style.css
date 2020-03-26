@@ -19,13 +19,16 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-.flex .position {
+.circle-form { /*block-name*/
+    display: flex;
+}
+.circle-form__inform{ /*block-name__elem-name*/
     width: 24%;
     margin-right: 1%;
     display: flex;
     justify-content: flex-end;
 }
-.flex .sticker {
+.circle-form__inform_visible{ /*block-name__elem-name_mod-name*/
     position: relative;
     top: 35px;
     display: flex;

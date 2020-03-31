@@ -11,25 +11,114 @@ body {
 }
 .container {
     width: 950px;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-color: #f0f1f4;
+    margin: 0 auto;    
 }
+    .container_color {
+        background-color: white;
+    }
 .header {
-    width: 100%;
-    height: 250px;
-    background: url("images/masthead.png");
+    max-width: 100%;
+    height: 150px;
+    padding: 20px;
+    background-repeat: repeat-x;
+    background-image: url("images/masthead.png");
+    --webkit-background-size: cover;
+    background-size: cover;
 }
-.header__img {
-    float: left;
-}
-.header__h1 {
-    
-}
+    .header__img {
+        float: left;
+        width: 65px;
+        height: 65px;
+        margin-right: 20px;
+    }
+    .header__text {
+        font-size: 18px;
+        line-height: 1.1rem;
+    }
+    .header__text_transform_upper {
+        text-transform: uppercase;
+    }
+    .header__text_color_gray {
+        color: gray;
+    }
+    .header__text_size_s {
+        font-size: 12px;
+        font-weight: 900;
+    }
 .main {
-    padding: 0 5px;
+    padding: 0 10px;
+}
+.main:after {
+    content: "";
+    clear: both;
+    display: block;
 }
 .paragraph {
     padding: 20px 50px;
-    background: gray;
+}
+    .paragraph_back-color {        
+        background-color: #e3e8ff;
+        border-radius: 3px;
+    }
+    .paragraph__list {
+        font-size: 15px;
+        line-height: 1.1rem;
+        margin-left: 1.1rem;
+    }
+    .paragraph__h3 {
+        font-size: 1.4em;
+    }
+        .paragraph__h3_size {
+            font-size: 0.9em;
+        }
+.form-download {
+    width: 250px;
+    height: 500px;
+    border-radius: 5px;
+    background-color: #a81817;
+    line-height: 1.1rem;
+    box-shadow: 0 15px 20px 5px rgba(0, 0, 0, 0.26),
+        0 5px 10px 0px rgba(0, 0, 0, 0.46);
+}
+    .form-download_float_right {
+        float: right;
+    }
+    .form-download_pos {
+        margin: 20px;
+    }
+.form-download__img {
+    width: 100%;
+    height: 150px;
+    border-bottom: 0.3px solid lightgray;
+    border-radius: 5px 5px 0 0;    
+}
+.form-download__list {
+    color: white;
+    list-style: none;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+    .form-download__list_transform_upper {
+        text-transform: uppercase;
+        
+    }
+    .form-download__list_text-size_12 {
+        font-size: 12px;
+    }
+    .form-download__list_text-weidht_900 {
+    }
+.footer {
+
+}
+.form {
+    width: 100%;
+    padding: 20px 20px 50px 20px;
+    background-color: white;
+}
+.form__input {
+    width: 100%;
+    padding: 1px;
+    border-radius: 3px;
+    box-sizing: border-box;
 }

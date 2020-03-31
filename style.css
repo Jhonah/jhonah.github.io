@@ -1,24 +1,35 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 html{
-  font-size: 20px;
+    font-size: 20px;
 }
 body {
-    width: 950px;
-    margin: 0 auto;
-    padding: 0 5px;
-    /*margin-top: 50px;*/
     background-color: #899593;
 }
 .container {
-    margin: 10px;
-    background: #f0f1f4;
+    width: 950px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-color: #f0f1f4;
+}
+.header {
+    width: 100%;
+    height: 250px;
+    background: url("images/masthead.png");
 }
 .header__img {
     float: left;
 }
-.main {
+.header__h1 {
     
+}
+.main {
+    padding: 0 5px;
+}
+.paragraph {
+    padding: 20px 50px;
+    background: gray;
 }

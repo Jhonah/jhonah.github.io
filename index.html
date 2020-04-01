@@ -6,22 +6,27 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <!--img src="img/f1004fc692930287faad8a32ffa38eda.png" /-->
-    
     <div class="container container_color">
         <div class="header">
-            <img class="header__img" src="images/logo_blue.png" alt="logo"/>
-            <h1 class="header__text">Computer Professionals Program
-            <br />
-            <span class="header__text_transform_upper">Master of science in computer
-                science</span>
+            <img class="header__img" src="images/logo_blue.png" alt="logo" />
+            <img class="header__img
+                        header__img_pos_float-right"
+                 src="images/higher_learning_commission_logo_85.jpg" alt="logo-right" />
+            
+            <h1 class="header__text">
+                Computer Professionals Program
+                <br />
+                <span class="header__text_transform_upper">
+                    Master of science in computer
+                    science
+                </span>
             </h1>
             <p class="header__text
                       header__text_transform_upper
                       header__text_color_gray
                       header__text_size_s
                       ">Maharishi university of management, usa</p>
-        </div>
+        </div><!--.header-->
         <div class="main">
             <div class="form-download
                         form-download_float_right
@@ -36,12 +41,21 @@
                     <li>Free Brochure</li>
                 </ul>
                 <form class="form">
-                    <input class="form__input" type="text" value="Email" />
-                    <input class="form__input" type="text" value="First name" />
-                    <input class="form__input" type="text" value="Last name" />
-                    <input class="form__input" type="text" value="Country of Residence" />
+                    <label>All fields required.</label>
+                    <input class="form__input" type="text"
+                           placeholder="Email" />
+                    <input class="form__input" type="text"
+                           value="First name" />
+                    <input class="form__input" type="text"
+                           value="Last name" />
+                    <select class="form__select"
+                            name="country">
+                        <option value="none">Country of Residence</option>
+                        <option value="usa">usa</option>
+                        <option value="russia">russia</option>
+                    </select>
                 </form>
-            </div>
+            </div><!--.form-download-->
             <div class="paragraph paragraph_back-color">
                 <h3 class="paragraph__h3">Study and Get a Paid Internship as a Software Developer in the USA</h3>
                 <ul class="paragraph__list">
@@ -66,9 +80,9 @@
                 </ul>
             </div>
         </div><!--.main-->
-            <div class="footer">
+        <div class="footer">
 
-            </div>
+        </div>
     </div><!--.container-->
 </body>
 </html>

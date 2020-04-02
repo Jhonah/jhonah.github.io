@@ -1,13 +1,50 @@
+/*@font-face {
+    font-family: "Intro";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Intro"),
+        url("Intro.woff") format(woff);
+}*/
+/*@font-face {
+    font-family: 'Intro';
+    src:
+        local('Intro'),
+        url('intro.woff2')
+    format('woff2'),
+        url('intro.woff')
+    format('woff'),
+        url('intro.ttf')
+    format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:
+        local('Roboto'),
+        local('Roboto-Regular'),
+        url('Roboto.woff2')
+    format('woff2'),
+        url('Roboto.woff')
+    format('woff'),
+        url('Roboto.ttf')
+    format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 html {
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 body {
+    color: #000 !important;
     background-color: #899593;
 }
 .container {
@@ -101,14 +138,21 @@ body {
         /*font-weight: 700;*/
         padding-bottom: 10px;
     }
-.paragraph__h3_size {
-    font-size: 0.9em;
-}
+        .paragraph .paragraph__h3 {
+            color: black !important;
+        }
+        .paragraph__h3_text-color_yellow {
+            color: yellow;
+        }
+        .paragraph__h3_size {
+            font-size: 0.9em;
+        }
 .paragraph__text_color_gray {
-    font-weight: 400px;
+    font-weight: 400;
     color: gray;
 }
 .form-download {
+    font-family: 'Intro', sans-serif;
     width: 250px;
     /*height: 500px;*/
     border-radius: 15px;
@@ -156,6 +200,7 @@ body {
     border-radius: 0 0 5px 5px;
 }
 .form__label {
+    font-family: 'Roboto', serif;
     font-size: 0.6em;
     color: #d80000;
 }

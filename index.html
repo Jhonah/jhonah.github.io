@@ -1,10 +1,11 @@
 <!Doctype html>
-<html lang="ru"/>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="intro/intro.css" />
+    <link rel="stylesheet" type="text/css" href="roboto/roboto.css" />
 </head>
 <body>
     <div class="container container_color">
@@ -56,6 +57,24 @@
                         <option value="russia">russia</option>
                     </select>
                 </form><!--.form-->
+                <svg width="100%" height="300">
+
+                    <rect width="100%" height="150" fill="#d80000" />
+                    <rect x="50" y="50" width="150" height="150" fill="green" />
+                    <text x="125" y="150" font-size="45" text-anchor="middle" fill="blue">Hello SVG</text>
+                    <!--rect width="100%" height="180" fill="skyblue" />
+        rect width="100%" height="110" fill="yellowgreen" y="180" />
+        <rect width="10" height="40" fill="black" x="55" y="220" rx="5" />
+        <rect width="10" height="40" fill="black" x="185" y="220" rx="5" />
+        <circle r="100" cx="50%" cy="160" fill="crimson" />
+        <circle r="80" cx="50%" cy="160" fill="white" />
+        <circle r="60" cx="50%" cy="160" fill="crimson" />
+        <circle r="40" cx="50%" cy="160" fill="white" />
+        <circle r="20" cx="50%" cy="160" fill="crimson" /-->
+
+                </svg>
+                <img src="some-file.svg" alt="здесь svg картинка" />
+                <iframe src="some-file.svg"></iframe>
             </div><!--.form-download-->
             <div class="paragraph paragraph_back-color">
                 <h3 class="paragraph__h3">Study and Get a Paid Internship as a Software Developer in the USA</h3>
@@ -69,9 +88,13 @@
                 </ul>
             </div>
             <div class="paragraph">
-                <h3 class="paragraph__h3 paragraph__h3_size">Requirements</h3>
+                <h3 class="paragraph__h3 paragraph__h3_size
+                           paragraph__h3_text-color_yellow"
+                    style="color: red;">
+                                        Requirements
+                </h3>
                 <ul class="paragraph__list paragraph__list_pos-margin_left">
-                    <li>3-4 Year Bachelor’s Degree in Computer Science or Related Subject
+                    <li>3-4 Year Bachelor’s <a href="source/coh2/index.html">Degree</a> in Computer Science or Related Subject
                     <li>Minimum GPA 3.0 out of 4 cumulative grade point average. GPA’s below 3.0 will be considered for strong professional work experience as a software developer
                     <li>Work experience as a software engineer:
                     <li>At least 6 months with 4 year degree/ 1-3 years with 3 year degree

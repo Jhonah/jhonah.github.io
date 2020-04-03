@@ -78,21 +78,28 @@ body {
     font-size: 11px;
     color: #999999;
 }
-.post__intro {
+.post__intro {    
     margin: 1em 0;
     padding: 10px;
     background-color: rgba(241, 196, 15, 0.1);
     border-radius: 5px;
+}
+.post__intro_float_left {
+    float: left;
+    width: 48%;
 }
 .post__content {
     min-height: 200px;
     margin-bottom: 20px;
     font-size: 14px;
 }
-.post__content-h2 {
-    margin: 1em 0 0.5em 0;
-    font-size: 18px;
+.post__content_float_right {
+    float: right;
 }
+    .post__content-h2 {
+        margin: 1em 0 0.5em 0;
+        font-size: 18px;
+    }
 .post__content-video {
     max-width: 100%;
 }

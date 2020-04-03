@@ -1,53 +1,63 @@
 <!Doctype html>
 <html lang="ru">
 <head>
-    <title>Про собак и видео</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+  <title>Про собак и видео</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>    
-    <header class="page-header">
-        <svg class="svg">
-            <rect width="65%" height="55%" rx="10%" fill="skyblue" />
-        </svg>
-        <div class="logo">
-            <img src="images/site-logo.png" width="177" height="74" alt="Dog Energy" />
-        </div>
-        <nav class="main-menu">
-            <ul class="main-menu__list">
-                <li class="main-menu__list-item"><a class="main-menu__link" href="#blog">статьи</a></li>
-                <li class="main-menu__list-item"><a class="main-menu__link" href="#ucenka">уценка</a></li>
-                <li class="main-menu__list-item"><a class="main-menu__link" href="#sale">скидки</a></li>
-                <li class="main-menu__list-item"><a class="main-menu__link" href="#dostavka">оплата и доставка</a></li>
-                <li class="main-menu__list-item"><a class="main-menu__link" href="#company">о компании</a></li>
-                <li class="main-menu__list-item"><a class="main-menu__link" href="#contact">контакты</a></li>
-                <li class="main-menu__list-item"><a class="main-menu__link" href="#sigin">войти</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <article class="post">
-            <h1 class="post__h1">Товары для собак</h1>
-            <time class="post__time" datetime="2020-04-02T22:55:00">
-                2 апреля 2020
-            </time>
-            <div class="post__intro">
-                <p>Тут записи статьи</p>
-            </div>
-            <div class="content">
-                <h2 class="content__h2">Media</h2>
-                <video controls preload="auto" width="400" height="225"></video>
-            </div>
-        </article>        
-    </main>
-    <footer class="page-footer">
-        <div class="info">
-            <img src="" width="50" alt="Картинка для футера" />
-            Евгений Буряк, evgeniy@gmail.com
-        </div>
-        <div class="copyright">
-            2020 Dog Energy
-        </div>
-    </footer>
+  <header class="page-header">
+    <svg class="svg">
+      <rect width="65%" height="55%" rx="10%" fill="skyblue" />
+    </svg>
+    <div class="logo">
+      <img src="images/site-logo.png" width="177" height="74" alt="Dog Energy" />
+    </div>
+    <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__list-item"><a class="main-menu__link" href="#blog">статьи</a></li>
+        <li class="main-menu__list-item"><a class="main-menu__link" href="#ucenka">уценка</a></li>
+        <li class="main-menu__list-item"><a class="main-menu__link" href="#sale">скидки</a></li>
+        <li class="main-menu__list-item"><a class="main-menu__link" href="#dostavka">оплата и доставка</a></li>
+        <li class="main-menu__list-item"><a class="main-menu__link" href="#company">о компании</a></li>
+        <li class="main-menu__list-item"><a class="main-menu__link" href="#contact">контакты</a></li>
+        <li class="main-menu__list-item"><a class="main-menu__link" href="#sigin">войти</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <article class="post">
+      <h1 class="post__h1">Товары для собак</h1>
+      <time class="post__time" datetime="2020-04-02T22:55:00">
+        2 апреля 2020
+      </time>
+      <div class="post__intro">
+        <p>Тут записи статьи</p>
+      </div>
+      <div class="post__content">
+        <h2 class="post__content-h2">Media</h2>
+        <video class="post__content-video"
+               controls preload="metadata"
+               width="400" height="225">
+          <source src="" type="" />
+          <source src="" type="" />
+          <source src="" type="" />
+        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_IfYlVX-LEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </article>        
+  </main>
+  <footer class="page-footer">
+    <div class="info">
+      <img class="info__img"
+            src="images/shiba.jpeg"
+            width="50"
+            alt="Картинка для футера" />
+      Евгений Буряк, evgeniy@gmail.com
+    </div>
+    <div class="copyright">
+      2020 Dog Energy
+    </div>
+  </footer>
 </body>
 </html>

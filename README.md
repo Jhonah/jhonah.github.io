@@ -3,3 +3,4 @@ This is the Hello World example from the git tutorial.
 hello git clone
 fourth is third line readme.md
 fifth line
+sixth line

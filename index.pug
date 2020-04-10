@@ -1,0 +1,21 @@
+//- index.pug
+doctype html
+html(lang="ru")
+  include ./components/head.pug
+  body
+    include ./components/header.pug
+    h1 Hello, World!
+    ul.list#listItems
+      li.list__item <a href="#" target="_blank"> Персик</a>
+      li.list__item Банан
+      li.list__item Арбуз
+      li.list__item Свекла
+    input(type='checkbox' nane='agreement' checked)
+    a(href='#', target='_blank') Google
+    a.button(href='#', target='_blank') Google
+    p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolorum, assumenda animi, deleniti sunt tempore quaerat nihil eveniet unde perferendis, possimus est temporibus labore minus amet et? Voluptatem, molestiae tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolorum, assumenda animi, deleniti sunt tempore quaerat nihil eveniet unde perferendis, possimus est temporibus labore minus amet et? Voluptatem, molestiae tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        | <br>Еще строка текста
+    //- Это комментарий в коде не видно
+    //- Это комментарий в коде видно
+    include ./components/footer.pug

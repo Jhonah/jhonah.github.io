@@ -40,21 +40,27 @@ html, body {
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
-    /* identical to box height */
-    color: #FFF;
-    background-color: #005BC1;
+    /* identical to box height */    
     box-sizing: border-box;
 }
-/*.page-footer::after {
+.page-footer_cyan-theme {
+    color: #FFF;
+    background-color: #005BC1;
+}
+.page-footer_light-theme {
+    color: black;
+    border: 1px solid #005BC1;
+}
+    /*.page-footer::after {
   content: '';
   display: table;
   clear: both;
 }*/
-.page-footer__content {
-  width: 1110px;
-  margin: 0 auto;
-  /*background-color: #005B71;*/
-}
+    .page-footer__content {
+        width: 1110px;
+        margin: 0 auto;
+        /*background-color: #005B71;*/
+    }
 .page-footer__info {
     display: flex;
     flex-direction: row;

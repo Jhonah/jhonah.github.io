@@ -1,3 +1,19 @@
 //- Footer.pug
-footer.footer
-  p Copyright текст
+footer.page-footer.page-footer_cyan-theme
+  .page-footer__content
+    .page-footer__info
+      h4.page-footer__info-telephone (812) 710-80-25
+      p.top-menu__text 191180, Санкт-Петербург, Набережная реки Фонтанки, 90, корпус 1
+      - var url = 'mail@buryak.ru';
+      a.top-menu__text.top-menu__mail(href="mailto:" + url, target="_blank", rel="noopener noreferrer") mail@translight.ru
+      button.page-footer__theme-button(type="button") Изменить тему    
+    ul.page-footer__news
+      li О компании
+      li Новости
+      li Каталог
+      li Аренда
+      li Наши проекты
+      li Сервисное обслуживание    
+    .page-footer__copyright
+      p.page-footer__info-copyright © 2019 ЗАО «Транслайт». Все права защищены.
+      p.page-footer__autor-copyright Разработка и дизайн - D-e-n.ru  

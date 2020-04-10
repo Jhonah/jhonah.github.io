@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 200;
+    src: url(fonts/OpenSansCondensed-Light.ttf);
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    src: url(fonts/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 600;    
+    src: url(fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 300;
+    src: url(fonts/Oswald-Light.ttf);
+}
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 400;
+    src: url(fonts/Oswald-Regular.ttf);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.page-footer {
+    width: 1920px;
+    min-height: 255px;
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */    
+    box-sizing: border-box;
+}
+.page-footer_cyan-theme {
+    color: #FFF;
+    background-color: #005BC1;
+}
+.page-footer_light-theme {
+    color: black;
+    border: 1px solid #005BC1;
+}
+    /*.page-footer::after {
+  content: '';
+  display: table;
+  clear: both;
+}*/
+    .page-footer__content {
+        width: 1110px;
+        margin: 0 auto;
+        /*background-color: #005B71;*/
+    }
+.page-footer__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+    padding: 36px 0 24px 0;
+    /*box-sizing: border-box;*/
+    /*background-color: #005BC1;*/
+}
+.page-footer__info-telephone {
+    width: 122px;
+    font-family: 'Oswald', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    text-align: left;
+    letter-spacing: 0.05em;
+    /*text-transform: uppercase;*/
+    margin: 0;
+}
+.top-menu__text {
+    width: 610px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+.top-menu__mail {
+    width: 127px;
+    text-decoration: none;
+    color: #FFF;
+    text-align: right;
+}
+.page-footer__news {
+    width: 49.5%;
+    height: 48px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    list-style: none;
+    padding: 25px 0 24px 0;
+    margin: 0;
+    /*background-color: #005BC1;*/
+}
+    .page-footer__news li:nth-child(3){
+        margin-right: 30px;
+    }
+    .page-footer__copyright {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+        border-top: 1px solid #FFFF
+    }
+.page-footer__info-copyright,
+.page-footer__autor-copyright {
+    margin: 0;
+}
+/*.info {
+    float: left;
+}
+.info__img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-color: white;
+  background-image: url("shiba.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100px 50px;
+  /*background-position-x: -50px;
+  border: 2px solid white;
+  box-shadow: 0 0 4px #c0392b;
+  transform: rotate(-5deg);
+}
+.copyright {
+  float: right;
+  padding-top: 20px;
+  font-size: 12px;
+}
+*/

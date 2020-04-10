@@ -1,3 +1,4 @@
 //- Header.pug
-header.header
+- var authenticated = true
+header(class=authenticated ? 'page-header' : 'none')
   .logo Logo Sites

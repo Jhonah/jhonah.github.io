@@ -1,0 +1,27 @@
+include ./button
+
+//- Mixin declaration
+mixin plan(options)
+  -
+    var priceClassName = "price"
+    priceClassName += options.isBusiness ? " price_business" : ""
+    var countClassName = "price-count"
+    countClassName += options.isBusiness ? " price-count_business" : ""
+    var titleClassName = "title"
+    titleClassName += options.isBusiness ? " title_business" : ""
+  .plan
+    div(class = titleClassName)= options.title
+    div(class = priceClassName)
+      span(class = countClassName)
+        em $
+        span= options.price
+      small.period /per month
+    .description
+      p
+        | Fusce fermentum placerat magna ac pharetra.
+        | Aliquam euismod elit non ipsum 
+        a.description-link(href="#", target="_blank")= "lacinia "
+        | consectetur.
+    
+      .buy-button
+        +btn({title: "Order Now", isBlue: options.isBusiness})

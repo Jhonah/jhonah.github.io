@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.page-header {
+    width: 1920px;
+    min-height: 800px;
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */    
+    box-sizing: border-box;
+	background: url('../image/Rectangle 2.png'), #c4c4c4;
+}
+.page-header__content {
+  display: flex;
+  align-items: center;
+  /* ---------- */
+  width: 1920px;
+  min-height: 80px;
+  background-color: rgba(0, 91, 193, 0.6);
+}
+.logo {
+  padding-left: 40px;
+  /*background-image: url('../image/logo.png');*/
+}
+.top__menu {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;	
+	/* ---------- */
+	list-style: none;
+	color: #fff;	
+}
+.top__menu li{
+  margin-right: 26px;
+}

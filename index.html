@@ -2,21 +2,101 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Учимся работать с шаблонизатором Pug  </title>
+    <title>Учимся работать с шаблонизатором Pug</title>
+    <link rel="stylesheet" type="text/css" href="./fonts/OpenSans/style.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/Oswald/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/plan-style.css">
     <link rel="stylesheet" type="text/css" href="style/header-style.css">
   </head>
-  <body>
+  <body>   
     <header class="page-header">
-	  <div class="page-header__content">
-	    <img class="logo" src="image/logo.png" width="140" height="58" />
-		<ul class="top__menu">		  
-		  <li>Контакты
-		  <li>Сервис
-		  <li>Каталог
-		  <li>Портфолио
-		  <li>О компании
-		</ul>
-	  </div>
-	</header>
+      <div class="page-header__top-menu"><img class="page-header__logo" src="image/logo.png" width="140" height="58">
+        <ul class="page-header__contact page-header__contact_text">
+          <li>Контакты</li>
+          <li>Сервис</li>
+          <li>Каталог</li>
+          <li>Портфолио</li>
+          <li>О компании</li>
+        </ul>
+      </div>
+      <div class="page-header__content"></div>
+    </header>
+    <div class="wrapper">
+      <div class="plan">
+        <div class="title">free</div>
+        <div class="price"><span class="price-count"><em>$</em><span>0</span></span><small class="period">/per month</small></div>
+        <div class="description">
+          <p>
+            Fusce fermentum placerat magna ac pharetra.
+            Aliquam euismod elit non ipsum <a class="description-link" href="#" target="_blank">lacinia </a>consectetur.
+          </p>
+          <div class="buy-button">
+            <button class="button">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan">
+        <div class="title">personal</div>
+        <div class="price"><span class="price-count"><em>$</em><span>25</span></span><small class="period">/per month</small></div>
+        <div class="description">
+          <p>
+            Fusce fermentum placerat magna ac pharetra.
+            Aliquam euismod elit non ipsum <a class="description-link" href="#" target="_blank">lacinia </a>consectetur.
+          </p>
+          <div class="buy-button">
+            <button class="button">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan">
+        <div class="title title_business">business</div>
+        <div class="price price_business"><span class="price-count price-count_business"><em>$</em><span>50</span></span><small class="period">/per month</small></div>
+        <div class="description">
+          <p>
+            Fusce fermentum placerat magna ac pharetra.
+            Aliquam euismod elit non ipsum <a class="description-link" href="#" target="_blank">lacinia </a>consectetur.
+          </p>
+          <div class="buy-button">
+            <button class="button button_blue">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan">
+        <div class="title">ultimate</div>
+        <div class="price"><span class="price-count"><em>$</em><span>99</span></span><small class="period">/per month</small></div>
+        <div class="description">
+          <p>
+            Fusce fermentum placerat magna ac pharetra.
+            Aliquam euismod elit non ipsum <a class="description-link" href="#" target="_blank">lacinia </a>consectetur.
+          </p>
+          <div class="buy-button">
+            <button class="button">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer page-footer_cyan-theme">
+      <div class="page-footer__content">
+        <div class="page-footer__info">
+          <h4 class="page-footer__info-telephone">(812) 710-80-25</h4>
+          <p class="top-menu__text">191180, Санкт-Петербург, Набережная реки Фонтанки, 90, корпус 1</p><a class="top-menu__text top-menu__mail" href="mailto:mail@buryak.ru" target="_blank" rel="noopener noreferrer">mail@translight.ru</a>
+          <button class="page-footer__theme-button" type="button">Изменить тему    </button>
+        </div>
+        <ul class="page-footer__news">
+          <li>О компании</li>
+          <li>Новости</li>
+          <li>Каталог</li>
+          <li>Аренда</li>
+          <li>Наши проекты</li>
+          <li>Сервисное обслуживание    </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <p class="page-footer__info-copyright">© 2019 ЗАО «Транслайт». Все права защищены.</p>
+          <p class="page-footer__autor-copyright">Разработка и дизайн - D-e-n.ru  </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

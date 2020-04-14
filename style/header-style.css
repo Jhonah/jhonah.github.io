@@ -17,7 +17,6 @@ html, body {
 .page-header__top-menu {
   display: flex;
   align-items: center;
-
   /* ---------- */
   width: 1920px;
   min-height: 80px;
@@ -38,7 +37,7 @@ html, body {
     margin-left: 555px;
     padding: 0;
 }
-.page-header__contact_text {
+.page-header__contact_font {
     font-family: "OpenSans-SemiBold";
     /*font-family: "OpenSans-Light";*/
     font-weight: 300;
@@ -48,10 +47,34 @@ html, body {
 .page-header__contact li {
     margin-right: 26px;
 }
-.page-header__content {
+.page-header__content_position-background {
     width: 444px;
     height: 720px;
     background-color: rgba(0, 91, 193, 0.6);
     /* ---------- */
     margin-left: 405px;
+}
+.page-header__content_indent {
+    position: relative;
+    top: 202px;
+    left: 190px;
+}
+.page-header__text {
+    width: 635px;
+    height: 142px;
+    /* ---------- */    
+    font-family: 'Oswald';
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 0.01em;
+    /* ---------- */
+    color: #fff;
+    margin: 0;
+}
+.page-header__description {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
 }

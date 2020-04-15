@@ -67,22 +67,38 @@ html, body {
     font-weight: 300;
     font-size: 48px;
     line-height: 71px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1rem;
     /* ---------- */
     color: #fff;
     margin: 0;
 }
 .page-header__description {
     font-family: 'Open Sans';
+    font-weight: 300;
     font-size: 16px;
     line-height: 22px;
+    letter-spacing: 0.02em;
+    /*-----------*/
+    margin-top: 40px;
+    margin-bottom: 0;
     color: #fff;
 }
 .page-header__button {
-  font-size: 24px;
-  padding: 5px 10px;
-  border: 1px solid cyan;
-  background: skyblue;
+    width: 160px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /*----------*/
+    text-align: center;
+    box-sizing: border-box;
+    /*----------*/
+    margin-top: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: rgba(0,0,0,0);
 }
 .page-header__button:hover {
   background: darkcyan;

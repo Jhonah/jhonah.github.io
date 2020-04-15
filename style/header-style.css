@@ -78,3 +78,15 @@ html, body {
     line-height: 22px;
     color: #fff;
 }
+.page-header__button {
+  font-size: 24px;
+  padding: 5px 10px;
+  border: 1px solid cyan;
+  background: skyblue;
+}
+.page-header__button:hover {
+  background: darkcyan;
+}
+.page-header__button:active {
+  background: skyblue;
+}

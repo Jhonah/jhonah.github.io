@@ -1,0 +1,28 @@
+.section_indent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1110px;
+    height: 520px;
+    margin: 150px auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.section__top-menu {
+    display: flex;
+}
+.decor-heading {
+
+}
+.section__text {
+    text-transform: uppercase;
+}
+.section__list {
+    display: flex;
+    justify-content: space-between;
+}
+.section__item {
+    width: 540px;
+    height: 400px;
+    background: url("../image/Rectangle 4.png") lightgray;
+}

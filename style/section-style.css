@@ -2,27 +2,44 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
     width: 1110px;
     height: 520px;
     margin: 150px auto;
-    border: 1px solid black;
-    box-sizing: border-box;
+    /*border: 1px solid black;*/
 }
 .section__top-menu {
     display: flex;
+    justify-content: space-between;
 }
-.decor-heading {
-
+.section__top-left {
+    width: 344px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .section__text {
+    font-family: 'Oswald';
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
+    color: #343434;
 }
 .section__list {
     display: flex;
     justify-content: space-between;
 }
+.section__item_float_left {
+    float: left;
+}
+.section__item_float_right {
+    float: right;
+}
 .section__item {
-    width: 540px;
-    height: 400px;
-    background: url("../image/Rectangle 4.png") lightgray;
+    /*position: relative;*/
+    width: 250px;
+    height: 110px;
+    background-color: black;
 }

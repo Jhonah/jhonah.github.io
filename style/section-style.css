@@ -31,15 +31,32 @@
     display: flex;
     justify-content: space-between;
 }
-.section__item_float_left {
-    float: left;
-}
-.section__item_float_right {
-    float: right;
-}
 .section__item {
-    /*position: relative;*/
-    width: 250px;
-    height: 110px;
-    background-color: black;
+    position: relative;
+	z-index: 1;
+    width: 540px;
+    height: 400px;
+    background-image: url("../image/Rectangle-4.png");
+    background-size: cover;
+}
+.section__item_other-image {
+    background-image: url("../image/Rectangle-4-dark.png");
+	background-size: cover;
+}
+.section__item-text {
+    position: absolute;
+	z-index: 2;
+	bottom: 35px;
+	right: 35px;
+	/*------------*/
+	display: block;
+    width: 200px;
+	height: 100px;
+	padding: 25px;
+	box-sizing: border-box;
+	background-color: #fff;
+	/*------------*/
+	/*font-family: '';*/
+	font-size: 14px;
+	line-height: 24px;
 }

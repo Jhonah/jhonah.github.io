@@ -1,12 +1,18 @@
 include ./components/plan
+include ./components/section_projects
 
 doctype html
 html(lang="ru")
   include ./components/head.pug
   body    
     include ./components/header.pug
-    include ./components/section_projects.pug
-    
+    //- include ./components/section_projects.pug
+	//- Call mixin section
+    +section_projects({title: "наши проекты"})
+	+section_projects({title: "каталог продукции"})
+	+section_projects({title: "аренда оборудования"})
+	+section_projects({title: "новости"})
+	
     //- Call mixin
     .wrapper
       +plan({title: "free", price: 0})

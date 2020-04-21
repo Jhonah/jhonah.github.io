@@ -1,14 +1,18 @@
 //- Include section_projects.pug
-section.section_indent
-  .section__top-menu
-    .section__top-left
-      img.decor-heading(width="100", height="13", src="./image/decor-heading.png")
-      h2.section__text наши проекты
-    .section__top-right
-      img.section__menu-button(width="55", height="55", src="./image/menu-button_left.png", alt="стрелка влево")
-      img.section__menu-button(width="55", height="55", src="./image/menu-button_right.png", alt="стрелка вправа")
-  .section__list
-    .section__item
-	  span.section__item-text Тут будет что-нибудь написано
-	.section__item.section__item_other-image
-	  span.section__item-text Тут будет что-нибудь написано
+
+//- Mixin declaration
+mixin section_projects(options)
+  section.section_indent
+    .section__top-menu
+      .section__top-left
+        img.decor-heading(width="100", height="13", src="./image/decor-heading.png")
+        h2(class = section__text)= options.title
+      .section__top-right
+        img.section__menu-button(width="55", height="55", src="./image/menu-button_left.png", alt="стрелка влево")
+        img.section__menu-button(width="55", height="55", src="./image/menu-button_right.png", alt="стрелка вправа")
+    .section__list
+      .section__item
+	    span.section__item-text Тут будет что-нибудь написано
+	  .section__item.section__item_other-image
+	    span.section__item-text Тут будет что-нибудь написано
+		

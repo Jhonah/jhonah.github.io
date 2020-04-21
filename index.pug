@@ -1,24 +1,25 @@
 include ./components/plan
 include ./components/section_projects
+include ./components/section_products
 
 doctype html
 html(lang="ru")
   include ./components/head.pug
   body    
     include ./components/header.pug
-    //- include ./components/section_projects.pug
-	//- Call mixin section
-    +section_projects({title: "наши проекты"})
-	+section_projects({title: "каталог продукции"})
-	+section_projects({title: "аренда оборудования"})
-	+section_projects({title: "новости"})
+    	
+    +projects ({title: "наши проекты"})
+    +projects ({title: "каталог продукции"})
+    +projects ({title: "аренда оборудования"})
+    +projects ({title: "новости"})
+    +products ({title: "каталог продукции"})
 	
     //- Call mixin
-    .wrapper
-      +plan({title: "free", price: 0})
-      +plan({title: "personal", price: 25})
-      +plan({title: "business", price: 50, isBusiness: true})
-      +plan({title: "ultimate", price: 99})
+    //- .wrapper
+    //-   +plan({title: "free", price: 0})
+    //-   +plan({title: "personal", price: 25})
+    //-   +plan({title: "business", price: 50, isBusiness: true})
+    //-   +plan({title: "ultimate", price: 99})
     
     include ./components/footer.pug
     script(src="script.js")

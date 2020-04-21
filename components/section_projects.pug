@@ -1,61 +1,22 @@
-//- Include section_projects.pug
-
-//- Mixin declaration
-mixin section_projects(options)
-//- Catalog projects
+mixin projects(options)
+  -
+    var sectionText = "section__text"
   section.section_indent
     .section__top-menu
       .section__top-left
         img.decor-heading(width="100", height="13", src="./image/decor-heading.png")
-        h2(class = section__text)= options.title
+        h2(class = sectionText)= options.title
       .section__top-right
         img.section__menu-button(width="55", height="55", src="./image/menu-button_left.png", alt="стрелка влево")
         img.section__menu-button(width="55", height="55", src="./image/menu-button_right.png", alt="стрелка вправа")
     .section__list
       .section__item
-	    span.section__item-text Тут будет что-нибудь написано
-	  .section__item.section__item_other-image
-	    span.section__item-text Тут будет что-нибудь написано
-		
-//- Catalog products
-section
-  .section__top-menu
-    .section__top-left
-	  img.decor-heading(width="100", height="13", src="./image/decor-heading.png")
-        h2(class = section__text)= options.title
-  .section__choose
-    a.section__link.section__text robe
-	a.section__link.section__text compulite
-  .section__list
-    .section__item
-	  span.section__item-text Тут будет что-нибудь написано
-	.section__item.section__item_other-image
-	  span.section__item-text Тут будет что-нибудь написано
-	.section__item.section__item_other-image
-	  span.section__item-text Тут будет что-нибудь написано
-//- Arenda oborudovania
-section
-  .section__top-menu
-    .section__top-left
-	  img.decor-heading(width="100", height="13", src="./image/decor-heading.png")
-        h2(class = section__text)= options.title
-  .section__list
-    .section__item
-	  p.section__little-text MORE TEXT
-	.section__item.section__item_other-image
-	  h3 новое оборудование предоставляемое в аренду
-	  .section__top-right
-        img.section__menu-button(width="55", height="55", src="./image/menu-button_left.png", alt="стрелка влево")
-        img.section__menu-button(width="55", height="55", src="./image/menu-button_right.png", alt="стрелка вправа")
-//- News
-section
-  .section__top-menu
-    .section__top-left
-	  img.decor-heading(width="100", height="13", src="./image/decor-heading.png")
-        h2(class = section__text)= options.title
-	.section__top-right
-	  button
-  .section__list
-    .section__item
-	.section__item
-	.section__item
+        span.section__item-text
+          .section__text-indent
+            h4 ССК "Олимп"
+            p Световое оформление форума "Шубы-2019"
+      .section__item.section__item_other-image
+        span.section__item-text
+          .section__text-indent
+            h4 ССК "Олимп"
+            p Световое оформление форума "Шубы-2019"

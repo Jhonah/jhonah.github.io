@@ -1,6 +1,7 @@
 include ./components/plan
 include ./components/section_projects
 include ./components/section_products
+include ./components/section_rent
 
 doctype html
 html(lang="ru")
@@ -9,10 +10,9 @@ html(lang="ru")
     include ./components/header.pug
     	
     +projects ({title: "наши проекты"})
-    +projects ({title: "каталог продукции"})
-    +projects ({title: "аренда оборудования"})
-    +projects ({title: "новости"})
     +products ({title: "каталог продукции"})
+    +rent ({title: "аренда оборудования"})
+    //- +projects ({title: "новости"})    
 	
     //- Call mixin
     //- .wrapper

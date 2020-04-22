@@ -1,0 +1,26 @@
+.section_indent_rent_height {
+    height: 478px;
+}
+.section__rent-text_position_center {
+    display: flex;
+    align-items: center;
+}
+.section__rent-text {   
+    width: 350px;
+    height: 175px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #343434;
+}
+.section__rent-item {
+    width: 665px;
+    height: 394px;
+    padding: 30px;
+    border: 3px solid #005bc1;
+    box-sizing: border-box;
+}
+.rent__top-menu {
+
+}

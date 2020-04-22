@@ -8,6 +8,9 @@
     margin: 150px auto;
     /*border: 1px solid black;*/
 }
+.section_indent_products_height {
+    height: 505px;
+}
 .section__top-menu {
     display: flex;
     justify-content: space-between;
@@ -28,6 +31,25 @@
     color: #343434;
     margin-left: 40px;
 }
+.section__link {
+    font-size: 24px;
+    line-height: 36px;
+    color: #005bc1;
+    text-decoration: none;
+    border-bottom: 2px solid #005bc1;
+    padding-bottom: 3px;
+}
+.section__link:hover {
+    color: black;
+    border-bottom-color: black;
+    cursor: pointer;
+}
+.section__link:active {
+    border: none;
+}
+.section__choose {
+    text-align: center;
+}
 .section__list {
     display: flex;
     justify-content: space-between;
@@ -42,7 +64,18 @@
 }
 .section__item_other-image {
     background-image: url("../image/Rectangle-4-dark.png");
-	background-size: cover;
+}
+.section__item_less {
+    width: 350px;
+    height: 300px;
+    background-image: url("../image/rent-1.png");
+}
+.section__item_less_2 {
+    order: 1;
+    background-image: url("../image/rent-2.png");
+}
+.section__item_less_3 {
+    background-image: url("../image/rent-3.png");
 }
 .section__item-text {
     position: absolute;
@@ -62,7 +95,28 @@
     font-size: 14px;
     line-height: 19px;
     color: #343434;
-    /*------------*/    
+}
+.section__item-text_less {
+    position: absolute;
+    z-index: 2;
+    bottom: 15px;
+    right: 0;
+    /*------------*/
+    width: 265px;
+    height: 86px;
+    padding-left: 21px;
+    background-color: #005bc1;
+    /*------------*/
+    font-family: 'Oswald';
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.section__item-text_position_center {
+    display: flex;
+    align-items: center;
 }
 .section__text-indent {
     display: flex;

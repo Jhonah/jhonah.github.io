@@ -2,44 +2,20 @@
 mixin products(options)
   -
     var sectionText = "section__text"
-  section
+  section.section_indent.section_indent_products_height
     .section__top-menu
       .section__top-left
         img.decor-heading(width="100", height="13", src="./image/decor-heading.png")
         h2(class = sectionText)= options.title
     .section__choose
-      a.section__link.section__text robe
-      a.section__link.section__text compulite
+      a.section__link.section__text(href="#") robe
+      a.section__link.section__text(href="#") compulite
     .section__list
-      .section__item
-        span.section__item-text Тут будет что-нибудь написано
-      .section__item.section__item_other-image
-        span.section__item-text Тут будет что-нибудь написано
-      .section__item.section__item_other-image
-        span.section__item-text Тут будет что-нибудь написано
-  //- Arenda oborudovania
-  section
-    .section__top-menu
-      .section__top-left
-        img.decor-heading(width="100", height="13", src="./image/decor-heading.png")
-        h2(class = sectionText)= options.title
-    .section__list
-      .section__item
-        p.section__little-text MORE TEXT
-      .section__item.section__item_other-image
-        h3 новое оборудование предоставляемое в аренду
-        .section__top-right
-          img.section__menu-button(width="55", height="55", src="./image/menu-button_left.png", alt="стрелка влево")
-          img.section__menu-button(width="55", height="55", src="./image/menu-button_right.png", alt="стрелка вправа")
-  //- News
-  section
-    .section__top-menu
-      .section__top-left
-        img.decor-heading(width="100", height="13", src="./image/decor-heading.png")
-        h2(class = sectionText)= options.title
-      .section__top-right
-        button
-    .section__list
-      .section__item
-      .section__item
-      .section__item
+      .section__item.section__item_less
+        span.section__item-text.section__item-text_less.section__item-text_position_center
+          | Статичные <br />
+          | светодиодные приборы
+      .section__item.section__item_less.section__item_less_2
+        span.section__item-text.section__item-text_less.section__item-text_position_center аксессуары
+      .section__item.section__item_less.section__item_less_3
+        span.section__item-text.section__item-text_less.section__item-text_position_center контроллеры

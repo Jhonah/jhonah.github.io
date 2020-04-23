@@ -51,23 +51,28 @@
 }
 .rent__content {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin: 29px 0 0 -3px;
 }
+.rent__content-right {
+    margin-right: 30px;
+}
 .rent__content-right-side_flex_between {
+    height: 206px;    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .rent__top-left-text {
     margin: 0;
-    padding-left: 40px;
     font-size: 16px;
     line-height: 24px;
 }
 .rent__content-text {
     width: 310px;
     height: 152px;
+    margin: 0;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

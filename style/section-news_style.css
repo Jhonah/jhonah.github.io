@@ -1,0 +1,72 @@
+.section_indent_news_height {
+    height: 363px;
+    margin: 108px auto 120px auto;
+}
+.section-news__button {
+    width: 190px;
+    height: 51px;
+    background-color: #005BC1;
+    border-style: none;
+}
+.section-news__button:hover {
+    cursor: pointer;
+}
+.section-news__button-text {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /*----------*/
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.section__inside-list {
+    display: flex;
+    /*flex-flow: column wrap;*/
+    justify-content: space-between;
+    /*align-content: space-between;*/
+    width: 540px;
+    height: 242px;
+}
+.section-news__item {
+    width: 255px;
+    height: inherit;
+}
+.section-news__item_flex-col-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section-news__item_image {
+    background-image: url("../image/image-nooteboke.jpg");
+}
+.section-news__top-menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.rent__top-left_indent {
+    width: 124px;
+    height: 27px;
+    margin: 0;
+}
+.rent__content-text_indent {
+    width: 72px;
+    height: 19px;
+    margin: 0;
+    padding: 0;
+}
+.rent__content-text_font {
+    font-weight: 600;
+    color: #979797;
+}
+.rent__content-text_no-padding {
+    width: 255px;
+    height: auto;
+    padding: 0;
+    text-transform: none;
+}
+.rent__content-text_underline {
+    text-decoration: underline;
+}

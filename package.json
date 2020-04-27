@@ -1,0 +1,22 @@
+{
+  "name": "gulp-project",
+  "version": "1.0.0",
+  "description": "my first fuck project",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jhonah/jhonah.github.io.git"
+  },
+  "author": "Eugene Buryak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jhonah/jhonah.github.io/issues"
+  },
+  "homepage": "https://github.com/Jhonah/jhonah.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

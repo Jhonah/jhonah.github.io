@@ -2,9 +2,11 @@
 .gulp
 .idea
 .vscode
+logo.png
 
 # Node
 node_modules
+pixel-perfect
 
 # Dist & test
 test

@@ -1,1 +1,31 @@
+@import "../utils/vars";
+
 // header style
+.header__background {
+    width: 100%;
+    height: 800px;
+    max-width: 1920px;
+}
+
+.container_pos_relative {
+    position: relative;
+    z-index: -1;
+}
+
+.header__menu {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+}
+
+.header__logo {
+
+}
+
+.header__contact {
+
+}
+
+.header__complex {
+
+}

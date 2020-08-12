@@ -76,15 +76,15 @@ section, .section {
   margin: 0 auto;
   max-width: $desktopWidth;
   @media screen and (max-width: $smDesktopWidth) {
-    max-width: tableWidth;
+    max-width: $tableWidth;
   }
   @media screen and (max-width: $tableWidth) {
-    max-width: phoneWidth;
+    max-width: $phoneWidth;
   }
   @media screen and (max-width: $phoneWidth) {
-    max-width: smPhoneWidth;
+    max-width: $smPhoneWidth;
   }
 }
 
 // Modules
-// @import "modules/my-module.scss";
+ @import "modules/header.scss";

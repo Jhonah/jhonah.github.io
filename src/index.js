@@ -10,7 +10,7 @@ import './assets/scss/main.scss'
 // Vue.js
 window.Vue = require('vue')
 
-// Vue components (for use in html)
+/* Vue components (for use in html) */
 Vue.component('example-component', require('./components/Example.vue').default)
 
 // Vue init

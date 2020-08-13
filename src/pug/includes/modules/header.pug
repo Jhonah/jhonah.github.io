@@ -1,12 +1,14 @@
 header
   img.header__background(src="./assets/img/background.png")
   .container.container_max-width_less
-    .header__menu
-      img.header__logo(src="./assets/img/HouseVOP.png")
-      ul.header__contact
-        li Контакты
-        li Ипотека
-        li Каталог квартир
-        li Район
-        li О комплексе
+    .header__menu.menu
+      .header__logo
+        img(src="./assets/img/HouseVOP.png")
+        p.logo__title= 'жилой комплекс'
+      nav.header__nav
+        a(href="#") Контакты
+        a(href="#") Ипотека
+        a(href="#") Каталог квартир
+        a(href="#") Район
+        a(href="#") О комплексе
     .header__complex

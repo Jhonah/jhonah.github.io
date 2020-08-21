@@ -1,7 +1,7 @@
 header
   img.header__background(src="./assets/img/background.png")
-  .container.container_max-width_less
-    .top-menu.menu
+  .container
+    .top-menu.top-menu_font.top-menu_grid
       .logo.top-menu__logo
         //- img(src="./assets/img/HouseVOP.png")
         h1.logo__title HouseVOP
@@ -12,4 +12,10 @@ header
         a(href="#") Каталог квартир
         a(href="#") Район
         a(href="#") О комплексе
-    .complex Жилой комплекс в историческом центре
+    .complex.complex_grid
+      .complex__title Жилой комплекс
+        span= ' в историческом центре'
+      .image-mouse
+    .top-footer.top-menu_font.top-footer_grid.top-footer_indent
+      p.placeholder Наб. реки Фонтанки 10-15
+      p.phone-call 8 (812) 123-45-67

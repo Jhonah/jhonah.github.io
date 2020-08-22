@@ -1,4 +1,9 @@
-mixin item(title, descr)
+mixin item(descr)
   .item
-    h2.item-title= title
+    p.item-descr= descr
+    //- h2.item-title= title
+
+mixin item2(title, descr)
+  .item
+    h2.item-img= title
     p.item-descr= descr

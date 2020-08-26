@@ -1,0 +1,25 @@
+.container__would-u-like-to-see {
+    //padding-top: 3px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our-apartments__would-u-like-to-see {
+    line-height: 40px;
+}
+
+.would-u-like-to-see__size-and-pos {
+    width: 535px;
+    height: 114px;
+}
+
+.would-u-like-to-see__title {
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFF;
+}

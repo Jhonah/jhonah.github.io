@@ -1,0 +1,74 @@
+.container__our-apartments {
+    display: grid;
+    grid-template-rows: 36px 100px 320px 30px 320px 180px;
+    grid-template-columns: 535px 30px 535px;
+}
+
+.our-apartments {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+}
+
+.our-apartments_grid-row_1 {
+    grid-row: 1;
+}
+
+.our-apartments_pos {
+    grid-row: 3;
+    grid-column: 1/4;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //flex-flow: row wrap;
+}
+
+.item-loft {
+    width: 535px;
+    height: 320px;
+    padding-left: 30px;
+}
+
+.item-loft:nth-child(odd) {
+    padding-left: 0;
+}
+
+.item-loft::before {
+    content: url('/assets/img/living-room.png');
+}
+
+.item-loft:nth-child(2n + 1)::before {
+    content: url('/assets/img/living-room2.png');
+}
+
+/*
+.item-loft {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.item-loft:nth-child(2n + 2) {
+    grid-column: 3;
+}
+
+.item-loft:nth-child(3n) {
+    grid-column: 1;
+    //grid-row: 3;
+}
+
+.item-loft:nth-child(4n) {
+    grid-column: 3;
+    //grid-row: 5;
+}
+
+.item-loft:nth-child(even) {
+    grid-row: 3;
+}
+
+.item-loft:nth-child(odd) {
+    grid-row: 5;
+}*/

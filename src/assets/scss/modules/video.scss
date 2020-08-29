@@ -1,0 +1,28 @@
+.section__video {
+    padding-top: 0;
+    padding-bottom: 180px;
+}
+
+.video__container {
+    width: 37.4479166667%;
+}
+
+.video::before {
+    content: url(/assets/img/living-room_square.png);
+    position: absolute;
+    z-index: 1;
+}
+
+.play-button::before {
+    content: url(/assets/img/play-button.png);
+    top: 275px;
+    left: 309px;
+    position: relative;
+    z-index: 2;
+}
+
+.content::after {
+    content: "";
+    display: block;
+    clear: none;
+}

@@ -6,7 +6,7 @@ block variables
   - var pageClass = 'index-page';
 
 block content
-  section.section_color_black
+  section.section_indent-down_zero
     .container.container_grid
       +item('Рядом исторические парки и скверы')
       +item('Полностью обустроенный')
@@ -19,9 +19,22 @@ block content
         +item-loft('Лофт - 2 этажа')
         +item-loft('Лофт - 3 этажа')
         +item-loft('Лофт - 4 этажа')
+
+  section.section_indent_zero
+    //- .header__background
+    img.background-wouldulike(src="./assets/img/back-wouldulike.png")
+
     .container.container__would-u-like-to-see
       h2.our-apartments.our-apartments__would-u-like-to-see Хотите посмотреть?
       p.would-u-like-to-see__size-and-pos.would-u-like-to-see__title Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+
+    .container.container__form-lookfor
+      form.form-lookfor(action='#', method='POST')
+        input.form-lookfor__input.input(type='text', name='name', value='Ваше имя')
+        input.form-lookfor__input.input(type='text', name='telephone', value='Ваш телефон')
+        input.form-lookfor__input.form-lookfor__input_color_D4C17F.input.input_color_FFF(tyle='submit', value='Посмотреть район')
+        p.form-lookfor__text-area.text-area *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+      
       
   //- example-component
 

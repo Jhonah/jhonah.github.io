@@ -13,21 +13,24 @@ block content
       +item('10 фонтанов на территории')
       +item('6 км велодорожек')
 
-  section.section__our-apartments
-    //- h2.our-apartments.our-apartments_grid-row_1 Наши квартиры
-    .container.container__our-apartments
+  section.our-apartments__section
+    //- .container
+    //- .our-apartments_grid-row_1 
+    .container
+      h2.header-text.our-apartments__header-text Наши квартиры
       //- .our-apartments_pos
-      +item-loft('Лофт - 1 этажа')
-      +item-loft('Лофт - 2 этажа')
-      +item-loft('Лофт - 3 этажа')
-      +item-loft('Лофт - 4 этажа')
+      .our-apartments__container
+        +item-loft('Лофт - 3 этажа')
+        +item-loft('Лофт - 3 этажа')
+        +item-loft('Лофт - 2 этажа')
+        +item-loft('Лофт - 2 этажа')
 
   section.section_indent_zero
     //- .header__background
     img.background-wouldulike(src="./assets/img/back-wouldulike.png")
 
     .container.container__would-u-like-to-see
-      h2.our-apartments.our-apartments__would-u-like-to-see Хотите посмотреть?
+      h2.header-text.our-apartments__would-u-like-to-see Хотите посмотреть?
       p.would-u-like-to-see__size-and-pos.would-u-like-to-see__title Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
 
     .container.container__form-lookfor
@@ -36,6 +39,7 @@ block content
         input.form-lookfor__input.input(type='text', name='telephone', value='Ваш телефон')
         input.form-lookfor__input.form-lookfor__input_color_D4C17F.input.input_color_FFF(tyle='submit', value='Посмотреть район')
         p.form-lookfor__text-area.text-area *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+  section
       
       
   //- example-component

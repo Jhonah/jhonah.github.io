@@ -1,8 +1,8 @@
-.section__our-apartments {
+.our-apartments__section {
     padding: 0;
 }
 
-.container__our-apartments {
+.our-apartments__container {
     display: grid;
     grid-template-rows: 70px 320px 320px;
     grid-template-columns: 535px 535px;
@@ -17,13 +17,13 @@
 }
 
 .item-loft:nth-child(2) {
-    grid-row: 2;
-    grid-column: 2;
+    grid-row: 3;
+    grid-column: 1;
 }
 
 .item-loft:nth-child(3) {
-    grid-row: 3;
-    grid-column: 1;
+    grid-row: 2;
+    grid-column: 2;
 }
 
 .item-loft:nth-child(4) {
@@ -38,6 +38,17 @@
     left: 50px;
 }
 
+.item-descr_size_24 {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+/*
+.item-descr_size_24:before {
+    content: "\A";
+    white-space: pre;
+    z-index: 3;
+}*/
 /*
 .item-loft:nth-child(2n + 2) {
     grid-column: 3;
@@ -61,7 +72,12 @@
     grid-row: 5;
 }*/
 
-.our-apartments {
+.our-apartments__header-text {
+    width: 292px;
+    height: 36px;
+}
+
+.header-text {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
@@ -95,9 +111,9 @@
 }
 
 .item-loft::before {
-    content: url('/assets/img/living-room.png');
+    content: url('/assets/img/living-room2.png');
 }
 
-.item-loft:nth-child(2n + 1)::before {
-    content: url('/assets/img/living-room2.png');
+.item-loft:nth-child(-n + 2)::before {
+    content: url('/assets/img/living-room.png');
 }
